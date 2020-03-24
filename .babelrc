@@ -1,0 +1,26 @@
+//按需加载antd  不用单独引入样式
+{
+  "presets": [
+      "next/babel"
+  ],
+  "plugins": [
+      [
+          "import",
+          {
+              "libraryName": "antd",
+              "style": true
+          }
+      ],
+      [
+        "module-resolver",
+        {
+          "alias": {
+            // "@common": "./components/common",
+            "@utils": "./components/utils",
+            "@pages": "./pages"
+            // "@middleware": "./server/middleware"
+          }
+        }
+      ]
+    ]
+}

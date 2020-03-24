@@ -1,0 +1,50 @@
+{
+    "parser": "babel-eslint",
+    "parserOptions": {
+        "ecmaVersion": 7,
+        "sourceType": "module",
+        "ecmaFeatures": { // 添加ES特性支持，使之能够识别ES6语法
+            "jsx": true
+        }
+    },
+    "plugins": [
+        "prettier",
+        "react-hooks"
+    ],
+    "env": {
+        "es6": true,
+        "browser": true,
+        "node": true
+    },
+    "extends": [
+        "eslint:recommended",
+        "plugin:react/recommended",
+        "prettier",
+        // "standard",   //使用standard做代码规范
+        "plugin:prettier/recommended"
+    ],
+    "globals": {
+        "React": false
+    },
+    "rules": {
+        "prettier/prettier": 1,
+        "react/prop-types": "off",
+        "eqeqeq": 2, // 必须使用全等
+        "comma-dangle": 0, // 对象的最后一个属性末尾必须有逗号
+        "comma-spacing": 1, // 逗号前禁止有空格，逗号后必须要有空格
+        "no-cond-assign": 2, //禁止在测试表达式中使用赋值语句，除非这个赋值语句被括号包起来了
+        "no-debugger": 2,
+        "no-undef": 2,
+        "arrow-body-style": 1,
+        "no-dupe-args": 2, // 禁止在函数参数中出现重复名称的参数
+        "no-duplicate-case": 2, // 禁止在 switch 语句中出现重复测试表达式的 case
+        "no-extra-semi": 2, // 禁止出现多余的分号
+        "use-isnan": 2, // 必须使用 isNaN(foo) 而不是 foo === NaN
+        "no-global-assign": 2, // 禁止对全局变量赋值
+        "semi": 1, // 结尾加分号
+        "no-const-assign": 2, // 禁止对使用 const 定义的常量重新赋值
+        "no-duplicate-imports": 2, // 禁止重复 import 模块
+        "react-hooks/rules-of-hooks": "error",
+        "react-hooks/exhaustive-deps": "warn"
+    }
+}

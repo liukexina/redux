@@ -1,0 +1,53 @@
+{
+  "name": "nextjs-learn",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "node server/index.js",
+    "build": "next build",
+    "start": "next start",
+    "test-eslint": "eslint pages/**.js pages/**/*.js components/**.js"
+  },
+  "dependencies": {
+    "@umijs/hooks": "^1.8.0",
+    "@zeit/next-less": "^1.0.1",
+    "antd": "^4.0.2",
+    "axios": "^0.19.2",
+    "babel-plugin-import": "^1.13.0",
+    "babel-plugin-module-resolver": "^4.0.0",
+    "eslint-plugin-prettier": "^3.1.2",
+    "eslint-plugin-react": "^7.19.0",
+    "file-loader": "^2.0.0",
+    "koa": "^2.11.0",
+    "less": "^3.11.1",
+    "less-loader": "^5.0.0",
+    "module-resolver": "^1.0.0",
+    "next": "9.3.0",
+    "next-redux-wrapper": "^5.0.0",
+    "npm": "^6.14.2",
+    "prettier": "^1.19.1",
+    "react": "16.13.0",
+    "react-dom": "16.13.0",
+    "react-redux": "^7.2.0",
+    "redux": "^4.0.5",
+    "typescript": "^3.8.3",
+    "url-loader": "^3.0.0"
+  },
+  "devDependencies": {
+    "babel-eslint": "^10.0.3",
+    "eslint": "^6.8.0",
+    "eslint-config-prettier": "^6.10.0",
+    "eslint-plugin-react-hooks": "^2.5.0"
+  },
+  "prettier": {
+    "tabWidth": 2,
+    "singleQuote": true,
+    "quotes": true,
+    "trailingComma": "es5",
+    "printWidth": 80,
+    "useTabs": false,
+    "semi": true,
+    "bracketSpacing": true,
+    "arrowParens": "avoid"
+  }
+}
