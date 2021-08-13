@@ -22,7 +22,7 @@
     "less": "^3.11.1",
     "less-loader": "^5.0.0",
     "module-resolver": "^1.0.0",
-    "next": "9.3.0",
+    "next": "11.1.0",
     "next-redux-wrapper": "^5.0.0",
     "npm": "^6.14.2",
     "prettier": "^1.19.1",
